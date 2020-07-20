@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>multi step form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="parent">
+      <div class="child1 mb-2 text-center text-uppercase">
+        sign up your user account
+      </div>
+      <div class="child2 mb-2 text-center">
+        Fill all form field to go to next step
+      </div>
+      <div class="child3 mb-2">
+        <div class="bar"></div>
+        <div class="circle1">
+          <div class="lock pevent">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="lock_name">account</div>
+        </div>
+        <div class="circle2">
+          <div class="lock pevent">
+            <i class="fas fa-user-lock"></i>
+          </div>
+          <div class="lock_name">personal</div>
+        </div>
+        <div class="circle3">
+          <div class="lock pevent">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="lock_name">education</div>
+        </div>
+        <div class="circle4">
+          <div class="lock">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="lock_name">success</div>
+        </div>
+      </div>
+      <div class="child4 mb-2">
+        <div class="the_bar"></div>
+      </div>
+      <div class="child5 mb-2">
+        <div class="acc text-capitalize font-weight-bold">
+          account information
+        </div>
+        <div class="step">step <span class="count">1</span> - 4</div>
+      </div>
+      <div class="form">
+        <form method="POST" class="form1">
+          <label class="fieldlabels">Email: *</label>
+          <input type="email" name="email" />
+          <label class="fieldlabels">Username: *</label>
+          <input type="text" name="uname" />
+          <label class="fieldlabels">Password: *</label>
+          <input type="password" name="pass" id="pass" />
+          <label class="fieldlabels">Confirm Password: *</label>
+          <input type="password" name="cpass" />
+          <div id="button1"><button class="save1">next</button></div>
+        </form>
+      </div>
+
+      <div class="form">
+        <form method="POST" class="form1">
+          <label>Full Name: *</label>
+          <input type="text" name="fname" />
+          <label>Address Line1: *</label>
+          <input type="text" name="Ad1" />
+          <label>Address Line2: *</label>
+          <input type="text" name="Ad2" />
+          <label>City: *</label>
+          <input type="text" name="city" />
+          <div class="buttons">
+            <div class="pre">pre</div>
+            <button class="save">save</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form">
+        <form method="POST" class="form1">
+          <label>Job Name: *</label>
+          <input type="text" name="Jn" />
+          <label>Job location: *</label>
+          <input type="text" name="Jl" />
+          <label>Company Name: *</label>
+          <input type="text" name="CN" />
+          <label>Year of experience: *</label>
+          <input type="text" name="yoe" />
+          <div class="buttons">
+            <div class="pre">pre</div>
+            <button class="save">save</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form">
+        <form method="POST" class="form1">
+          <div>
+            <label class="fieldlabels">Email: *</label>
+            <input type="email" name="email" id="em" disabled />
+            <label class="fieldlabels">Username: *</label>
+            <input type="text" name="uname" id="un" disabled />
+          </div>
+
+          <div>
+            <label class="fieldlabels">Password: *</label>
+            <input type="password" name="pwd" id="ps" disabled />
+            <label class="fieldlabels">Confirm Password: *</label>
+            <input type="password" name="cpwd" id="cps" disabled />
+          </div>
+
+          <div>
+            <label>Full Name: *</label>
+            <input type="text" name="fullName" id="fn" disabled />
+            <label>Address Line1: *</label>
+            <input type="text" name="Ad1" id="ad1" disabled />
+          </div>
+
+          <div>
+            <label>Address Line2: *</label>
+            <input type="text" name="Ad2" id="ad2" disabled />
+            <label>City: *</label>
+            <input type="text" name="city" id="ci" disabled />
+          </div>
+
+          <div>
+            <label>Job Name: *</label>
+            <input type="text" name="Jn" id="jn" disabled />
+            <label>Job location: *</label>
+            <input type="text" name="Jl" id="jl" disabled />
+          </div>
+
+          <div>
+            <label>Company Name: *</label>
+            <input type="text" name="CN" id="cn" disabled />
+            <label>Year of experience: *</label>
+            <input type="text" name="yoe" id="y" disabled />
+          </div>
+
+          <div class="buttons">
+            <div class="pre">pre</div>
+            <button class="save">send</button>
+          </div>
+        </form>
+      </div>
+      <div class="form">
+        <div class="text-center ty ty2">thank you</div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"
+      integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
